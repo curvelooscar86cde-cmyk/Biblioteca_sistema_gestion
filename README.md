@@ -57,7 +57,7 @@ Biblioteca/
 
 1. Clonar el repositorio.
 2. Abrir la carpeta en Visual Studio o Visual Studio Code.
-3. Ejecutar el script SQL ubicado en `/script-sql` para crear la base de datos y las tablas.
+3. Ejecutar los scripts SQL ubicados en `/scripts_SQL` para crear la base de datos, las tablas y los datos de prueba.
 4. Ajustar la cadena de conexión en `Program.cs` con el nombre de tu instancia de SQL Server.
 5. Ejecutar:
    ```
