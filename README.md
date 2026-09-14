@@ -17,11 +17,8 @@ El proyecto sigue una arquitectura por capas:
 
 ```
 Presentación (Windows Forms)
-        ↓
 Lógica de Negocio (Servicios, validaciones, excepciones de negocio)
-        ↓
 Acceso a Datos (Repositorios, ADO.NET)
-        ↓
 Base de Datos (SQL Server)
 ```
 
@@ -29,17 +26,17 @@ Base de Datos (SQL Server)
 
 ```
 Biblioteca/
-├── Program.cs                  # Punto de entrada y composición de dependencias
-├── Dominio/                    # Entidades del negocio (Autor, Libro, Usuario, Prestamo, etc.)
+├── Program.cs                
+├── Dominio/                    
 ├── AccesoDatos/
-│   ├── Conexion/                # Fábrica de conexión a SQL Server
-│   ├── Contratos/                # Interfaces de los repositorios
-│   └── Repositorios/            # Implementaciones con ADO.NET
+│   ├── Conexion/         
+│   ├── Contratos/             
+│   └── Repositorios/           
 ├── LogicaNegocio/
-│   ├── Contratos/                # Interfaces de los servicios de negocio
-│   ├── Servicios/                # Reglas de negocio (ISBN único, documento único, disponibilidad)
-│   └── Excepciones/              # Excepciones de negocio específicas
-└── Presentacion/                 # Formularios de Windows Forms
+│   ├── Contratos/               
+│   ├── Servicios/             
+│   └── Excepciones/            
+└── Presentacion/                 
 ```
 
 ## Funcionalidades
@@ -72,10 +69,6 @@ Biblioteca/
 ## Base de datos
 
 El modelo relacional contiene las siguientes tablas: `Autores`, `Categorias`, `Libros`, `Usuarios`, `Prestamos`, `DetallePrestamos`, con llaves primarias, foráneas y restricciones de integridad (ISBN único, documento único, cantidad mayor que cero).
-
-## Autor
-
-- [Tu nombre completo] — Ingeniería de Sistemas, CUN
 
 ## Licencia
 
